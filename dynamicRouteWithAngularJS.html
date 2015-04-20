@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Dynamic Route with AngularJS</title>
+</head>
+<body ng-app="dynamicRoute">
+WIZE: <a href="#/wize/view">View</a> | <a href="#/wize/edit">Edit</a>
+<hr />
+Assert-it <a href="#/assert-it/view">View</a> | <a href="#/assert-it/edit">Edit</a>
+<br/><br/>
+
+<div ng-view></div>
+<script src="lib/angular.min.js"></script>
+<script src="lib/angular-route.min.js"></script>
+<script src="api/routes.js"></script>
+<script src="src/dynamicRoutingWithAngularJS.js"></script>
+<script src="src/wize/wize.app.js"></script>
+<script src="src/assert-it/assert.it.app.js"></script>
+</body>
+</html>
